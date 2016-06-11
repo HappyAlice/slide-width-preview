@@ -1,12 +1,12 @@
 // 定义数据
 var data = [
-	{img:1, h1:'Sunday', h2:'sunney'},
-	{img:2, h1:'Monday', h2:'sunney'},
-	{img:3, h1:'Thusday', h2:'sunney'},
-	{img:4, h1:'Wednesday', h2:'sunney'},
-	{img:5, h1:'Thirsday', h2:'sunney'},
-	{img:6, h1:'Friday', h2:'sunney'},
-	{img:7, h1:'Saterday', h2:'sunney'}
+	{img:1, h1:'Sunday', h2:'luncly'},
+	{img:2, h1:'Monday', h2:'happy'},
+	{img:3, h1:'Thusday', h2:'funney'}
+	// {img:4, h1:'Wednesday', h2:'sunney'},
+	// {img:5, h1:'Thirsday', h2:'sunney'},
+	// {img:6, h1:'Friday', h2:'sunney'},
+	// {img:7, h1:'Saterday', h2:'sunney'}
 ];
 
 // 定义一个通用函数,通过id或者class来获取dom元素
@@ -72,6 +72,7 @@ function addSlider(){
 	// 定义何时处理幻灯片输出
 	window.onload = function(){
 		addSlider();
+		switchSlider(1);
 	}
 
 
