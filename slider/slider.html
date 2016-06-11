@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>带缩略图幻灯片</title>
+		<link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/slider.css">
+
+	</head>
+	<body>
+		<div class="slider">
+
+			<div class="main" id="template-main">
+				<div class="main-i" id="main-{{index}}">
+					<div class="caption">
+						<h2>{{h1}}</h2>
+						<h3>{{h2}}</h3>
+					</div>
+					<img src="images/{{index}}.png" />
+				</div>
+			</div>
+
+			<div class="ctrl" id="template-ctrl">
+				<a class="ctrl-i" id="ctrl-{{index}}" href="javascript:switchSlider({{index}});">
+					<img src="images/{{index}}.png" />
+				</a>
+			</div>
+		</div>
+		<script src="js/slider.js"></script>
+	</body>
+</html>
